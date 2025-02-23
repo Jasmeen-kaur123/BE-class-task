@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello G24</h1>
+    <% let x=13; %>
+    <% let name="ketan" %>
+    <%= x %>
+    <%= name %>
+
+     <% if (x<18) { %>
+        <h1>you are not eligible for vote</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam expedita assumenda sapiente id natus quis.</p>
+     <% } else { %>
+         <h1>you are eligible for vote</h1>
+         <p>Lorem ipsum dolor sit.</p> 
+     <% } %>  
+
+     <% for( let index = 0; index < 15; index++ ) { %>
+             <h1><%= index %></h1>
+     <% } %>
+
+     <% let arr=[23,45,23,65,44,33] %>
+     <% arr.forEach(element => { %>
+       <%=element  %>
+     <% }) %>
+   
+</body>
+</html>
